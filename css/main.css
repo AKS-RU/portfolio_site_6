@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 /*===============
     MODERN CSS RESET
   =============== */
@@ -13,6 +48,7 @@ html, body {
   height: 100%;
   font-family: sans-serif; /* или твой шрифт по умолчанию */
   -webkit-text-size-adjust: 100%; /* избегаем масштабирования на iOS */
+  background: #E5E5E5;
 }
 
 /* Все элементы — по ширине контейнера, без неожиданных переполнений */
@@ -69,4 +105,128 @@ button {
 /* Скрываем скрытые элементы */
 [hidden] {
   display: none !important;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Lato", sans-serif;
+  --red-orange: #EE3D1B;
+  --ruby-red: #ED4C5C;
+}
+/* Настройка проекта */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.block {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 36px;
+  color: #000;
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.header {
+}
+.header .container {
+  background: url(../img/Bg.png);
+}
+.header__header-flex {
+  padding-top: 52px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.header__header-flex-left {
+  display: flex;
+  align-items: center;
+  gap:11px;
+}
+.header__header-flex-left  img {
+  width: 24.65px;
+}
+.header__header-flex-left h4 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header__header-flex-medium {
+  padding-top: 8px;
+  max-width: 440px;
+}
+.header__header-flex-medium-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.header__header-flex-medium-grid a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  }
+.header__header-flex-right {
+}
+.header__header-flex-right a {
+  width: 100px;
+  height: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.header__title {
+  padding-top: 164px;
+  padding-bottom: 187px;
+}
+.header__title p {
+  padding-top: 40px;
+  max-width: 452px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 55px;
+}
+.header__title .btn {
+  display: flex;
+  margin: 0 auto;
+  width: 160px;
+  height: 50px;
+  background: #fff;
+  color: var(--ruby-red);
 }
