@@ -1,0 +1,72 @@
+/*===============
+    MODERN CSS RESET
+  =============== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Наследование шрифтов и размеров по умолчанию */
+html, body {
+  height: 100%;
+  font-family: sans-serif; /* или твой шрифт по умолчанию */
+  -webkit-text-size-adjust: 100%; /* избегаем масштабирования на iOS */
+}
+
+/* Все элементы — по ширине контейнера, без неожиданных переполнений */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем отступы у списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Обнуляем стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем границы у изображений */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Формы — стилизуем под себя */
+input, button, textarea, select {
+  font: inherit; /* наследуют шрифт родителя */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* Убираем внешний вид по умолчанию у кнопок */
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Фокус — обязательно оставляй видимость! */
+*:focus {
+  outline: none;
+}
+
+/* Но можно добавить свой стиль фокуса */
+*:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Скрываем скрытые элементы */
+[hidden] {
+  display: none !important;
+}
