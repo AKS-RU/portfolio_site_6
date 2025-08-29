@@ -118,6 +118,7 @@ button {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #fff;
 }
 .block {
   max-width: 1110px;
@@ -229,4 +230,38 @@ h2 {
   height: 50px;
   background: #fff;
   color: var(--ruby-red);
+}
+/* video_section */
+.video_section {
+}
+.block {
+}
+.video_section-flex {
+  padding-top: 96px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.video_section-flex-left {
+  max-width: 491px;
+}
+
+.video_section-flex-left p {
+  padding-top: 50px;
+  line-height: 121%;
+  text-align: justify;
+  padding-bottom: 13px;
+}
+.video_section-flex-left a {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: var(--ruby-red);
+}
+.video_section-flex-right {
+
 }
