@@ -157,6 +157,13 @@ h2 {
 .btn:hover {
   transform: translateY(-2px);
 }
+.icon:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.icon:active {
+  transform: translateY(2px);
+}
 .header .container {
   background: url(../img/Bg.png);
 }
@@ -196,6 +203,20 @@ h2 {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+  }
+  .header__header-flex-medium-grid a:hover {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-weight: 700;
+  }
+  .header__header-flex-medium-grid a:active {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    background: #fff;
+    color: var(--red-orange);
   }
 .header__header-flex-right a {
   width: 100px;
@@ -389,7 +410,7 @@ h2 {
 .app_download__flex {
   padding-top: 89px;
   display: flex;
-  padding-bottom: 97px;
+  padding-bottom: 100px;
 }
 .app_download__flex-left {
   max-width: 445px;
@@ -415,4 +436,76 @@ h2 {
   justify-content: space-between;
 }
 .app_download__flex-right {
+}
+/* contact_us */
+.contact_us__flex {
+  padding-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 137px;
+
+}
+.contact_us__flex-left {
+  padding-top: 24px;
+  padding-left: 12px;
+  max-width: 448px;
+}
+.contact_us__flex-left h2 {
+}
+.contact_us__flex-left p {
+  padding-top: 55px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: #000;
+}
+.contact_us_flex-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact_us_flex-right input {
+  border: 1px solid #333;
+  border-radius: 6px;
+  width: 540px;
+  height: 60px;
+}
+.contact_us_flex-right input[placeholder] {
+  padding-left: 29px;
+}
+.contact_us_flex-right .btn {
+  width: 160px;
+  height: 50px;
+  background: var(--ruby-red);
+  color: #fff;
+}
+.footer {
+}
+.footer .container {
+  background: #FAFAFA;
+}
+.footer__inner {
+  padding-top: 44px;
+  padding-left: 3px;
+  max-width: 204px;
+  padding-bottom: 20px;
+}
+.footer__inner h3 {
+  padding-bottom: 16px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: #101010;
+}
+.footer__inner p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #101010;
+}
+.footer__copyright {
+  padding-top: 20px;
 }
